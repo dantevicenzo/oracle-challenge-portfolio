@@ -28,10 +28,19 @@ export const List = styled.ul`
         gap: 1rem;
       }
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   li:nth-child(even) {
     flex-direction: row-reverse;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 `
 
