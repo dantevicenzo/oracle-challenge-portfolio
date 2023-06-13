@@ -5,7 +5,8 @@ export const Container = styled.header`
   align-items: center;
   justify-content: space-between;
   width: 71rem;
-  margin: 2.156rem auto;
+  margin: 0 auto;
+  padding: 2.156rem 0;
 
   font-size: 1rem;
 `
