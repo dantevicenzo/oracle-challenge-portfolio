@@ -39,16 +39,30 @@ const BaseButton = styled.button`
   padding: 1rem;
   font-size: 1rem;
   cursor: pointer;
+
+  @media (max-width: 425px) {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
 `
 
 export const RepositoryButton = styled(BaseButton)`
   background-color: transparent;
   border: 1px solid ${(props) => props.theme.colors.blue100};
   color: ${(props) => props.theme.colors.blue100};
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.blue20};
+  }
 `
 
 export const SeeDemoButton = styled(BaseButton)`
   background-color: ${(props) => props.theme.colors.blue100};
   border: none;
   color: ${(props) => props.theme.colors.white};
+
+  &:hover {
+    background-color: ${(props) => props.theme.colors.blue80};
+  }
 `
