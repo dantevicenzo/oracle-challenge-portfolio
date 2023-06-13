@@ -1,7 +1,9 @@
+import { Header } from './components/Header'
+
 export function App() {
   return (
     <>
-      <h1>Challenge Front-end Portfolio</h1>
+      <Header />
     </>
   )
 }
