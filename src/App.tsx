@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { AboutMe } from './components/AboutMe'
 import { SkillsAndHobbies } from './components/SkillsAndHobbies'
 import { Education } from './components/Education'
+import { Experience } from './components/Experience'
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
       <AboutMe />
       <SkillsAndHobbies />
       <Education />
+      <Experience />
     </>
   )
 }
