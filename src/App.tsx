@@ -5,6 +5,7 @@ import { SkillsAndHobbies } from './components/SkillsAndHobbies'
 import { Education } from './components/Education'
 import { Experience } from './components/Experience'
 import { Footer } from './components/Footer'
+import { Contact } from './components/Contact'
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
       <SkillsAndHobbies />
       <Education />
       <Experience />
+      <Contact />
       <Footer />
     </>
   )
