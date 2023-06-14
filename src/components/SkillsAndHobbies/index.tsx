@@ -20,7 +20,7 @@ import {
 export function SkillsAndHobbies() {
   return (
     <Container>
-      <h2>Skills</h2>
+      <h2 id="skills">Skills</h2>
       <BoxList>
         <Box>
           <FontAwesomeIcon icon={faHtml5} />
@@ -47,7 +47,7 @@ export function SkillsAndHobbies() {
           <strong>CSS</strong>
         </Box>
       </BoxList>
-      <h2>Hobbies</h2>
+      <h2 id="hobbies">Hobbies</h2>
       <BoxList>
         <Box>
           <FontAwesomeIcon icon={faPersonSkating} />

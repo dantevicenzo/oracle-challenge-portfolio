@@ -13,7 +13,7 @@ import {
 
 export function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <Content>
         <img src={contactImg} alt="" />
         <Form>

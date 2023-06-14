@@ -3,7 +3,7 @@ import { Container, Content, Paragraph, SignatureImg, Title } from './styles'
 
 export function AboutMe() {
   return (
-    <Container>
+    <Container id="about-me">
       <Content>
         <Title>Sobre Mim</Title>
         <Paragraph>

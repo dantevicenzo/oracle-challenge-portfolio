@@ -10,22 +10,22 @@ export function Header() {
       <Nav>
         <ul>
           <li>
-            <a href="#">Sobre mim</a>
+            <a href="#about-me">Sobre mim</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#">Hobbies</a>
+            <a href="#hobbies">Hobbies</a>
           </li>
           <li>
-            <a href="#">Formação</a>
+            <a href="#education">Formação</a>
           </li>
           <li>
-            <a href="#">Projetos</a>
+            <a href="#experience">Projetos</a>
           </li>
           <li>
-            <a href="mailto:contato@dantevicenzo.com">
+            <a href="#contact">
               <strong>contato@dantevicenzo.com</strong>
             </a>
           </li>

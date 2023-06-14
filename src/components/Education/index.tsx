@@ -5,7 +5,7 @@ import { Container, Content, ImgContainer, List } from './styles'
 
 export function Education() {
   return (
-    <Container>
+    <Container id="education">
       <Content>
         <h2>Formação acadêmica</h2>
         <List>
