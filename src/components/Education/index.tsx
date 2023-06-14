@@ -13,22 +13,22 @@ export function Education() {
             <ImgContainer>
               <img src={education1} alt="" />
             </ImgContainer>
-            <strong>Análise de dados</strong>
-            <span>2018 - UFRP</span>
+            <strong>Graduação em Filosofia</strong>
+            <span>2017 a 2020 - FSB</span>
           </li>
           <li>
             <ImgContainer>
               <img src={education2} alt="" />
             </ImgContainer>
-            <strong>Formação UX Design</strong>
-            <span>2019 - Alura</span>
+            <strong>Pós-Graduação em Cinema</strong>
+            <span>2020 a 2021 - USCS</span>
           </li>
           <li>
             <ImgContainer>
               <img src={education3} alt="" />
             </ImgContainer>
-            <strong>Pós-graduação design</strong>
-            <span>Em andamento - UFRJ</span>
+            <strong>Formação em Front-End</strong>
+            <span>Em andamento - Alura</span>
           </li>
         </List>
       </Content>

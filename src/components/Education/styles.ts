@@ -41,4 +41,8 @@ export const ImgContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${(props) => props.theme.colors.white};
+
+  img {
+    height: 9rem;
+  }
 `
