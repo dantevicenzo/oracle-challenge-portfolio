@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faHtml5,
   faJs,
-  faPhp,
   faNodeJs,
   faReact,
   faCss3,
@@ -16,6 +15,7 @@ import {
   faUtensils,
   faCamera,
 } from '@fortawesome/free-solid-svg-icons'
+import { ReactComponent as TypescriptSvg } from '../../assets/typescript.svg'
 
 export function SkillsAndHobbies() {
   return (
@@ -31,8 +31,8 @@ export function SkillsAndHobbies() {
           <strong>Javascript</strong>
         </Box>
         <Box>
-          <FontAwesomeIcon icon={faPhp} />
-          <strong>PHP</strong>
+          <TypescriptSvg />
+          <strong>Typescript</strong>
         </Box>
         <Box>
           <FontAwesomeIcon icon={faNodeJs} />

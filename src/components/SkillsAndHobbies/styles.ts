@@ -30,6 +30,7 @@ export const Box = styled.li`
 
   svg {
     font-size: 2rem;
+    height: 2rem;
     color: ${(props) => props.theme.colors.blue100};
   }
 
