@@ -13,43 +13,46 @@ export const List = styled.ul`
   margin-top: 2rem;
   max-width: 71rem;
   width: 71rem;
+`
 
-  li {
-    display: flex;
-    align-items: center;
+export const ListItem = styled.li`
+  display: flex;
+  align-items: center;
 
-    gap: 1.625rem;
+  gap: 1.625rem;
 
-    img {
-      max-width: 75%;
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      flex: 1 0 auto;
-
-      div {
-        flex-direction: row;
-        gap: 1rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  li:nth-child(even) {
+  &:nth-child(even) {
     flex-direction: row-reverse;
 
     @media (max-width: 768px) {
       flex-direction: column;
     }
   }
+`
+
+export const ImgWrapper = styled.div`
+  img {
+    width: 100%;
+  }
+`
+
+export const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  flex: 1 0 auto;
+`
+
+export const ActionsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 `
 
 const BaseButton = styled.a`

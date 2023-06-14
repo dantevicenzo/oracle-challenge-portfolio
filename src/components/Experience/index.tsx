@@ -2,19 +2,30 @@ import experience1 from '../../assets/experience1.png'
 import experience2 from '../../assets/experience2.png'
 import experience3 from '../../assets/experience3.png'
 import experience4 from '../../assets/experience4.png'
-import { Container, List, RepositoryButton, SeeDemoButton } from './styles'
+import {
+  ActionsWrapper,
+  Container,
+  ImgWrapper,
+  InfoWrapper,
+  List,
+  ListItem,
+  RepositoryButton,
+  SeeDemoButton,
+} from './styles'
 
 export function Experience() {
   return (
     <Container id="experience">
       <h2>Experiência profissional</h2>
       <List>
-        <li>
-          <img src={experience1} alt="" />
-          <div>
+        <ListItem>
+          <ImgWrapper>
+            <img src={experience1} alt="" />
+          </ImgWrapper>
+          <InfoWrapper>
             <strong>Decodificador de texto</strong>
             <span>HTML, CSS e Javascript</span>
-            <div>
+            <ActionsWrapper>
               <RepositoryButton
                 href="https://dantevicenzo.github.io/oracle-challenge-decodificador/"
                 target="_blank"
@@ -27,15 +38,17 @@ export function Experience() {
               >
                 Ver demo
               </SeeDemoButton>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src={experience2} alt="" />
-          <div>
+            </ActionsWrapper>
+          </InfoWrapper>
+        </ListItem>
+        <ListItem>
+          <ImgWrapper>
+            <img src={experience2} alt="" />
+          </ImgWrapper>
+          <InfoWrapper>
             <strong>Lista de Tarefas</strong>
             <span>React e Typescript</span>
-            <div>
+            <ActionsWrapper>
               <RepositoryButton href="https://github.com/dantevicenzo/todo-list">
                 Repositório
               </RepositoryButton>
@@ -45,15 +58,17 @@ export function Experience() {
               >
                 Ver demo
               </SeeDemoButton>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src={experience3} alt="" />
-          <div>
+            </ActionsWrapper>
+          </InfoWrapper>
+        </ListItem>
+        <ListItem>
+          <ImgWrapper>
+            <img src={experience3} alt="" />
+          </ImgWrapper>
+          <InfoWrapper>
             <strong>Cafeteria Delivery</strong>
             <span>React e Typescript</span>
-            <div>
+            <ActionsWrapper>
               <RepositoryButton
                 href="https://github.com/dantevicenzo/coffee-delivery"
                 target="_blank"
@@ -63,15 +78,17 @@ export function Experience() {
               <SeeDemoButton href="https://coffee-delivery.pages.dev/">
                 Ver demo
               </SeeDemoButton>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src={experience4} alt="" />
-          <div>
+            </ActionsWrapper>
+          </InfoWrapper>
+        </ListItem>
+        <ListItem>
+          <ImgWrapper>
+            <img src={experience4} alt="" />
+          </ImgWrapper>
+          <InfoWrapper>
             <strong>Github Blog</strong>
             <span>React e Typescript</span>
-            <div>
+            <ActionsWrapper>
               <RepositoryButton
                 href="https://github.com/dantevicenzo/github-blog"
                 target="_blank"
@@ -84,9 +101,9 @@ export function Experience() {
               >
                 Ver demo
               </SeeDemoButton>
-            </div>
-          </div>
-        </li>
+            </ActionsWrapper>
+          </InfoWrapper>
+        </ListItem>
       </List>
     </Container>
   )
