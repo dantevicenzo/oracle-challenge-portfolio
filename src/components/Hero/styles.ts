@@ -29,6 +29,7 @@ export const LinksList = styled.ul`
     gap: 8px;
     text-decoration: none;
     color: ${(props) => props.theme.colors.black100};
+    font-weight: 500;
   }
 `
 

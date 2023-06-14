@@ -47,6 +47,10 @@ export const InfoWrapper = styled.div`
   gap: 0.5rem;
 
   flex: 1 0 auto;
+
+  span {
+    font-weight: 500;
+  }
 `
 
 export const ActionsWrapper = styled.div`

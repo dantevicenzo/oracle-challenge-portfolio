@@ -9,6 +9,7 @@ export const Container = styled.header`
   padding: 2.156rem 0;
 
   font-size: 1rem;
+  font-weight: 500;
 `
 
 export const LogoContainer = styled.div`

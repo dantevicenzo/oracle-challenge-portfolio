@@ -30,6 +30,7 @@ export const List = styled.ul`
 
     span {
       font-size: 1rem;
+      font-weight: 500;
     }
   }
 `
