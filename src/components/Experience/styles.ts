@@ -11,6 +11,8 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 3.344rem;
   margin-top: 2rem;
+  max-width: 71rem;
+  width: 71rem;
 
   li {
     display: flex;
@@ -18,10 +20,16 @@ export const List = styled.ul`
 
     gap: 1.625rem;
 
+    img {
+      max-width: 75%;
+    }
+
     div {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
+      flex: 1 0 auto;
 
       div {
         flex-direction: row;
@@ -44,10 +52,11 @@ export const List = styled.ul`
   }
 `
 
-const BaseButton = styled.button`
+const BaseButton = styled.a`
   padding: 1rem;
   font-size: 1rem;
   cursor: pointer;
+  text-decoration: none;
 
   @media (max-width: 425px) {
     padding: 0.75rem;

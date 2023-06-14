@@ -13,43 +13,77 @@ export function Experience() {
           <img src={experience1} alt="" />
           <div>
             <strong>Decodificador de texto</strong>
-            <span>Challenge Alura Codificador</span>
+            <span>HTML, CSS e Javascript</span>
             <div>
-              <RepositoryButton>Repositório</RepositoryButton>
-              <SeeDemoButton>Ver demo</SeeDemoButton>
+              <RepositoryButton
+                href="https://dantevicenzo.github.io/oracle-challenge-decodificador/"
+                target="_blank"
+              >
+                Repositório
+              </RepositoryButton>
+              <SeeDemoButton
+                href="https://github.com/dantevicenzo/oracle-challenge-decodificador"
+                target="_blank"
+              >
+                Ver demo
+              </SeeDemoButton>
             </div>
           </div>
         </li>
         <li>
           <img src={experience2} alt="" />
           <div>
-            <strong>Jogo criado com HTML, CSS e JavaScript</strong>
-            <span>Challenge Oracle</span>
+            <strong>Lista de Tarefas</strong>
+            <span>React e Typescript</span>
             <div>
-              <RepositoryButton>Repositório</RepositoryButton>
-              <SeeDemoButton>Ver demo</SeeDemoButton>
+              <RepositoryButton href="https://github.com/dantevicenzo/todo-list">
+                Repositório
+              </RepositoryButton>
+              <SeeDemoButton
+                href="https://todo-list-7wc.pages.dev/"
+                target="_blank"
+              >
+                Ver demo
+              </SeeDemoButton>
             </div>
           </div>
         </li>
         <li>
           <img src={experience3} alt="" />
           <div>
-            <strong>Decodificador de texto</strong>
-            <span>Challenge Alura Codificador</span>
+            <strong>Cafeteria Delivery</strong>
+            <span>React e Typescript</span>
             <div>
-              <RepositoryButton>Repositório</RepositoryButton>
-              <SeeDemoButton>Ver demo</SeeDemoButton>
+              <RepositoryButton
+                href="https://github.com/dantevicenzo/coffee-delivery"
+                target="_blank"
+              >
+                Repositório
+              </RepositoryButton>
+              <SeeDemoButton href="https://coffee-delivery.pages.dev/">
+                Ver demo
+              </SeeDemoButton>
             </div>
           </div>
         </li>
         <li>
           <img src={experience4} alt="" />
           <div>
-            <strong>Jogo criado com HTML, CSS e JavaScript</strong>
-            <span>Challenge Oracle</span>
+            <strong>Github Blog</strong>
+            <span>React e Typescript</span>
             <div>
-              <RepositoryButton>Repositório</RepositoryButton>
-              <SeeDemoButton>Ver demo</SeeDemoButton>
+              <RepositoryButton
+                href="https://github.com/dantevicenzo/github-blog"
+                target="_blank"
+              >
+                Repositório
+              </RepositoryButton>
+              <SeeDemoButton
+                href="https://github-blog-prod.pages.dev/"
+                target="_blank"
+              >
+                Ver demo
+              </SeeDemoButton>
             </div>
           </div>
         </li>
