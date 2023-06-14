@@ -1,7 +1,10 @@
+import { Container } from './styles'
+
 export function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <Container>
+      <span>Desenvolvido por Dante Vicenzo</span>
+      <span>2023</span>
+    </Container>
   )
 }
