@@ -1,5 +1,6 @@
 import logo from '../../assets/logo.svg'
 import { Container, LogoContainer, Nav } from './styles'
+import { Link } from 'react-scroll'
 
 export function Header() {
   return (
@@ -10,24 +11,34 @@ export function Header() {
       <Nav>
         <ul>
           <li>
-            <a href="#about-me">Sobre mim</a>
+            <Link href="#about-me" to="about-me" smooth duration={450}>
+              Sobre mim
+            </Link>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <Link href="#skills" to="skills" smooth duration={450}>
+              Skills
+            </Link>
           </li>
           <li>
-            <a href="#hobbies">Hobbies</a>
+            <Link href="#hobbies" to="hobbies" smooth duration={450}>
+              Hobbies
+            </Link>
           </li>
           <li>
-            <a href="#education">Formação</a>
+            <Link href="#education" to="education" smooth duration={450}>
+              Formação
+            </Link>
           </li>
           <li>
-            <a href="#experience">Projetos</a>
+            <Link href="#experience" to="experience" smooth duration={450}>
+              Projetos
+            </Link>
           </li>
           <li>
-            <a href="#contact">
+            <Link href="#contact" to="contact" smooth duration={450}>
               <strong>contato@dantevicenzo.com</strong>
-            </a>
+            </Link>
           </li>
         </ul>
       </Nav>
