@@ -31,11 +31,9 @@ export function AboutMe() {
           a narrativa é moldada através de códigos e soluções inovadoras.
         </Paragraph>
         <Paragraph>
-          Minha paixão por cinema me ensinou a ser criativo, adaptável e a
-          abordar desafios com uma mentalidade aberta. Combinando essa
-          mentalidade com meu desejo de aprender e crescer na área da
-          tecnologia, estou comprometido em aprimorar minhas habilidades de
-          desenvolvimento web, adquirindo conhecimento em linguagens de
+          Combinando essa mentalidade com meu desejo de aprender e crescer na
+          área da tecnologia, estou comprometido em aprimorar minhas habilidades
+          de desenvolvimento web, adquirindo conhecimento em linguagens de
           programação como HTML, CSS e JavaScript, além de frameworks populares
           como React e Node.js.
         </Paragraph>
