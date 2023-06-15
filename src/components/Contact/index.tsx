@@ -50,7 +50,7 @@ export function Contact() {
         import.meta.env.VITE_PUBLIC_KEY,
       )
       .then((response) => {
-        console.log('EMAIL ENVIADO', response.status, response.text)
+        alert('Mensagem Enviada!')
         reset()
       })
       .catch((error) => {
@@ -59,7 +59,6 @@ export function Contact() {
   }
 
   function onSubmit(formData: TContactFormData) {
-    console.log(formData)
     sendEmail(formData.name, formData.subject, formData.email, formData.message)
   }
 
