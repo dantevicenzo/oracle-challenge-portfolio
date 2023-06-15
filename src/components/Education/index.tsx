@@ -1,13 +1,13 @@
 import education1 from '../../assets/education1.png'
 import education2 from '../../assets/education2.png'
 import education3 from '../../assets/education3.png'
-import { Container, Content, ImgContainer, List } from './styles'
+import { Container, Content, ImgContainer, List, Title } from './styles'
 
 export function Education() {
   return (
     <Container id="education">
       <Content>
-        <h2>Formação acadêmica</h2>
+        <Title>Formação acadêmica</Title>
         <List>
           <li>
             <ImgContainer>

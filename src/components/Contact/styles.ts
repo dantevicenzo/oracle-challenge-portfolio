@@ -1,21 +1,36 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
+  display: flex;
   background-color: ${(props) => props.theme.colors.blue10};
 `
 export const Content = styled.div`
   display: flex;
   gap: 1rem;
-  width: 71rem;
+  width: auto;
+  max-width: calc(71rem + 4rem);
   margin: 0 auto;
-  padding: 8.094rem 0 4.094rem;
+  padding: 8.094rem 2rem 4.094rem;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding: 2rem;
+    img {
+      display: none;
+    }
+  }
 `
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `
 export const Title = styled.h2`
   font-size: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.375rem;
+  }
 `
 export const Paragraph = styled.p`
   font-size: 1rem;
@@ -29,7 +44,7 @@ export const SendMessageButton = styled.button`
 
   align-self: flex-start;
 
-  @media (max-width: 425px) {
+  @media (max-width: 768px) {
     padding: 0.75rem;
     font-size: 0.875rem;
     font-weight: bold;
@@ -72,6 +87,8 @@ export const Input = styled.input`
 export const Textarea = styled.textarea`
   resize: none;
   flex-grow: 1;
+
+  min-height: 8.313rem;
 
   padding: 1rem 0.75rem;
   border-radius: 4px;

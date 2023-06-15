@@ -4,15 +4,38 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 71rem;
+  width: auto;
+  max-width: calc(71rem + 4rem);
   margin: 0 auto;
-  padding-top: 2rem;
+  padding: 2rem 2rem 0;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1.375rem;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    padding: 1rem;
+  }
 `
 export const BoxList = styled.ul`
   display: flex;
   width: 100%;
   gap: 1rem;
   margin: 2rem 0 5.5rem;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 768px) {
+    margin: 2rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `
 export const Box = styled.li`
   display: flex;
@@ -21,8 +44,8 @@ export const Box = styled.li`
   align-items: flex-start;
   gap: 0.5rem;
   list-style: none;
-  height: 174px;
-  width: 176px;
+  height: 10.875rem;
+  width: 11rem;
 
   padding: 1rem;
 
@@ -36,5 +59,10 @@ export const Box = styled.li`
 
   strong {
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 7.375rem;
+    width: auto;
   }
 `

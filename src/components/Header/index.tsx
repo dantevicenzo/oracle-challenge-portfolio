@@ -37,7 +37,7 @@ export function Header() {
           </li>
           <li>
             <Link href="#contact" to="contact" smooth duration={450}>
-              <strong>contato@dantevicenzo.com</strong>
+              contato@dantevicenzo.com
             </Link>
           </li>
         </ul>
