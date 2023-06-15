@@ -49,7 +49,7 @@ export function Contact() {
         templateParams,
         import.meta.env.VITE_PUBLIC_KEY,
       )
-      .then((response) => {
+      .then(() => {
         alert('Mensagem Enviada!')
         reset()
       })
