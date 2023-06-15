@@ -10,13 +10,64 @@ import {
   Textarea,
   Title,
 } from './styles'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as z from 'zod'
+import emailjs from '@emailjs/browser'
+
+const contactFormValidationSchema = z.object({
+  name: z.string(),
+  email: z.string(),
+  subject: z.string(),
+  message: z.string(),
+})
+
+type TContactFormData = z.infer<typeof contactFormValidationSchema>
 
 export function Contact() {
+  const { register, handleSubmit, reset } = useForm<TContactFormData>({
+    resolver: zodResolver(contactFormValidationSchema),
+  })
+
+  function sendEmail(
+    senderName: string,
+    subject: string,
+    senderEmail: string,
+    message: string,
+  ) {
+    const templateParams = {
+      senderName,
+      senderEmail,
+      message,
+      subject,
+    }
+
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_PUBLIC_KEY,
+      )
+      .then((response) => {
+        console.log('EMAIL ENVIADO', response.status, response.text)
+        reset()
+      })
+      .catch((error) => {
+        console.error(error)
+      })
+  }
+
+  function onSubmit(formData: TContactFormData) {
+    console.log(formData)
+    sendEmail(formData.name, formData.subject, formData.email, formData.message)
+  }
+
   return (
     <Container id="contact">
       <Content>
         <img src={contactImg} alt="" />
-        <Form>
+        <Form onSubmit={handleSubmit(onSubmit)}>
           <Title>Contato</Title>
           <Paragraph>
             Quer entrar em contato comigo? <br />
@@ -24,11 +75,11 @@ export function Contact() {
             possível.
           </Paragraph>
           <InputWrapper>
-            <Input type="text" placeholder="Nome" />
-            <Input type="email" placeholder="Email" />
-            <Input type="text" placeholder="Assunto" />
-            <Textarea placeholder="Mensagem" />
-            <SendMessageButton>Enviar Mensagem</SendMessageButton>
+            <Input type="text" {...register('name')} placeholder="Nome" />
+            <Input type="email" {...register('email')} placeholder="Email" />
+            <Input type="text" {...register('subject')} placeholder="Assunto" />
+            <Textarea {...register('message')} placeholder="Mensagem" />
+            <SendMessageButton type="submit">Enviar Mensagem</SendMessageButton>
           </InputWrapper>
         </Form>
       </Content>
