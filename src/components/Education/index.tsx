@@ -27,7 +27,7 @@ export function Education() {
             <ImgContainer>
               <img src={education3} alt="" />
             </ImgContainer>
-            <strong>Formação em Front-End</strong>
+            <strong>Formação em Front-End React</strong>
             <span>Em andamento - Alura</span>
           </li>
         </List>
