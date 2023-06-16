@@ -172,6 +172,6 @@ export const Label = styled.label`
   top: 16px;
   left: 12px;
   pointer-events: none;
-  transition: opacity, top, 0.15s;
+  transition: opacity, top, color, font-size, 0.15s;
   color: ${(props) => props.theme.colors.black50};
 `
