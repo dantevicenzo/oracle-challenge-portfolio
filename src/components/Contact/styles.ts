@@ -129,7 +129,7 @@ export const Textarea = styled.textarea<IInputProps>`
 
   overflow: hidden;
 
-  padding: 1.75rem 0.75rem 0.375rem;
+  padding: 1.75rem 0.75rem 0.438rem;
   border-radius: 4px;
   border: none;
   font-size: 1rem;
@@ -141,6 +141,7 @@ export const Textarea = styled.textarea<IInputProps>`
 
   &:focus {
     outline: none;
+    padding-bottom: 0.375rem;
     border-bottom: 2px solid ${(props) => props.theme.colors.blue100};
   }
 
