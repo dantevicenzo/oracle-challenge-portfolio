@@ -65,9 +65,11 @@ export const InputWrapper = styled.div`
   height: 100%;
 
   span {
+    height: 2rem;
+    display: flex;
+    align-items: center;
     font-size: 0.875rem;
     font-weight: 500;
-    margin: 0.5rem 0;
     color: ${(props) => props.theme.colors.red100};
   }
 `

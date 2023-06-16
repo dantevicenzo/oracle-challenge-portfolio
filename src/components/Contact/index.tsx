@@ -106,19 +106,16 @@ export function Contact() {
           </Paragraph>
           <InputWrapper>
             <Input
-              type="text"
               {...register('name', { required: true, maxLength: 50 })}
               placeholder="Nome"
             />
             {errors.name && <span>{errors.name.message}</span>}
             <Input
-              type="text"
               {...register('email', { required: true })}
               placeholder="Email"
             />
             {errors.email && <span>{errors.email.message}</span>}
             <Input
-              type="text"
               {...register('subject', { required: true, maxLength: 50 })}
               placeholder="Assunto"
             />
