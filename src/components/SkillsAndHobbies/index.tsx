@@ -27,8 +27,16 @@ export function SkillsAndHobbies() {
           <strong>Html 5</strong>
         </Box>
         <Box>
+          <FontAwesomeIcon icon={faCss3} />
+          <strong>CSS</strong>
+        </Box>
+        <Box>
           <FontAwesomeIcon icon={faJs} />
           <strong>Javascript</strong>
+        </Box>
+        <Box>
+          <FontAwesomeIcon icon={faReact} />
+          <strong>React</strong>
         </Box>
         <Box>
           <TypescriptSvg />
@@ -37,14 +45,6 @@ export function SkillsAndHobbies() {
         <Box>
           <FontAwesomeIcon icon={faNodeJs} />
           <strong>Node JS</strong>
-        </Box>
-        <Box>
-          <FontAwesomeIcon icon={faReact} />
-          <strong>React</strong>
-        </Box>
-        <Box>
-          <FontAwesomeIcon icon={faCss3} />
-          <strong>CSS</strong>
         </Box>
       </BoxList>
       <h2 id="hobbies">Hobbies</h2>
