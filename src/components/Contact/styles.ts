@@ -62,8 +62,14 @@ export const SendMessageButton = styled.button`
 export const InputWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   height: 100%;
+
+  span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: ${(props) => props.theme.colors.red100};
+  }
 `
 
 export const Input = styled.input`
@@ -82,6 +88,12 @@ export const Input = styled.input`
   &::placeholder {
     color: ${(props) => props.theme.colors.black50};
   }
+
+  & + input,
+  & + textarea,
+  & + button {
+    margin-top: 2rem;
+  }
 `
 
 export const Textarea = styled.textarea`
@@ -89,6 +101,8 @@ export const Textarea = styled.textarea`
   flex-grow: 1;
 
   min-height: 8.313rem;
+
+  overflow: hidden;
 
   padding: 1rem 0.75rem;
   border-radius: 4px;
@@ -104,5 +118,9 @@ export const Textarea = styled.textarea`
 
   &::placeholder {
     color: ${(props) => props.theme.colors.black50};
+  }
+
+  & + button {
+    margin-top: 2rem;
   }
 `

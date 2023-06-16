@@ -16,16 +16,47 @@ import * as z from 'zod'
 import emailjs from '@emailjs/browser'
 
 const contactFormValidationSchema = z.object({
-  name: z.string(),
-  email: z.string(),
-  subject: z.string(),
-  message: z.string(),
+  name: z
+    .string()
+    .nonempty({
+      message: 'O campo nome é obrigatório.',
+    })
+    .max(50, {
+      message: 'O campo não pode exceder o limite máximo de 50 caracteres',
+    }),
+  email: z
+    .string()
+    .nonempty({
+      message: 'O campo email é obrigatório.',
+    })
+    .email({ message: 'Endereço de email inválido' }),
+  subject: z
+    .string()
+    .nonempty({
+      message: 'O campo assunto é obrigatório.',
+    })
+    .max(50, {
+      message: 'O campo não pode exceder o limite máximo de 50 caracteres',
+    }),
+  message: z
+    .string()
+    .nonempty({
+      message: 'O campo mensagem é obrigatório.',
+    })
+    .max(300, {
+      message: 'O campo não pode exceder o limite máximo de 300 caracteres',
+    }),
 })
 
 type TContactFormData = z.infer<typeof contactFormValidationSchema>
 
 export function Contact() {
-  const { register, handleSubmit, reset } = useForm<TContactFormData>({
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<TContactFormData>({
     resolver: zodResolver(contactFormValidationSchema),
   })
 
@@ -74,10 +105,29 @@ export function Contact() {
             possível.
           </Paragraph>
           <InputWrapper>
-            <Input type="text" {...register('name')} placeholder="Nome" />
-            <Input type="email" {...register('email')} placeholder="Email" />
-            <Input type="text" {...register('subject')} placeholder="Assunto" />
-            <Textarea {...register('message')} placeholder="Mensagem" />
+            <Input
+              type="text"
+              {...register('name', { required: true, maxLength: 50 })}
+              placeholder="Nome"
+            />
+            {errors.name && <span>{errors.name.message}</span>}
+            <Input
+              type="text"
+              {...register('email', { required: true })}
+              placeholder="Email"
+            />
+            {errors.email && <span>{errors.email.message}</span>}
+            <Input
+              type="text"
+              {...register('subject', { required: true, maxLength: 50 })}
+              placeholder="Assunto"
+            />
+            {errors.subject && <span>{errors.subject.message}</span>}
+            <Textarea
+              {...register('message', { required: true, maxLength: 300 })}
+              placeholder="Mensagem"
+            />
+            {errors.message && <span>{errors.message.message}</span>}
             <SendMessageButton type="submit">Enviar Mensagem</SendMessageButton>
           </InputWrapper>
         </Form>

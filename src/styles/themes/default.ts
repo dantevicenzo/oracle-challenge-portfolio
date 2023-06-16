@@ -8,6 +8,7 @@ export const defaultTheme = {
     blue20: '#D4E4FA',
     blue80: '#5595E9',
     blue100: '#2A7AE4',
+    red100: '#E42828',
     white: '#FFFFFF',
   },
   typography: {
