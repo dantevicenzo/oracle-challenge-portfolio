@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.section`
   display: flex;
@@ -61,26 +61,31 @@ export const SendMessageButton = styled.button`
   }
 `
 
-export const InputWrapper = styled.div`
+export const Error = styled.span`
+  height: 2rem;
   display: flex;
-  flex-direction: column;
-  height: 100%;
-
-  span {
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: ${(props) => props.theme.colors.red100};
-  }
+  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: ${(props) => props.theme.colors.red100};
 `
 
-export const Input = styled.input`
-  padding: 1rem 0.75rem;
+export const CustomInputWrapper = styled.div`
+  position: relative;
+  width: 100%;
+`
+
+interface IInputProps {
+  isValid: boolean
+}
+
+export const Input = styled.input<IInputProps>`
+  padding: 1.75rem 0.75rem 0.5rem;
   border-radius: 4px;
   border: none;
   font-size: 1rem;
+  height: 53px;
+  width: 100%;
 
   border-bottom: 2px solid ${(props) => props.theme.colors.black30};
 
@@ -89,26 +94,38 @@ export const Input = styled.input`
     border-bottom: 2px solid ${(props) => props.theme.colors.blue100};
   }
 
+  &:focus + label,
+  &:not(:placeholder-shown) + label {
+    font-size: 0.75rem;
+    top: 7px;
+  }
+
+  &:focus + label {
+    color: ${(props) => props.theme.colors.blue100};
+  }
+
   &::placeholder {
+    opacity: 0;
     color: ${(props) => props.theme.colors.black50};
   }
 
-  & + input,
-  & + textarea,
-  & + button {
-    margin-top: 2rem;
-  }
+  ${(props) =>
+    props.isValid &&
+    css`
+      margin-bottom: 2rem;
+    `}
 `
 
-export const Textarea = styled.textarea`
+export const Textarea = styled.textarea<IInputProps>`
   resize: none;
   flex-grow: 1;
+  width: 100%;
 
   min-height: 8.313rem;
 
   overflow: hidden;
 
-  padding: 1rem 0.75rem;
+  padding: 1.75rem 0.75rem 0.5rem;
   border-radius: 4px;
   border: none;
   font-size: 1rem;
@@ -120,11 +137,33 @@ export const Textarea = styled.textarea`
     border-bottom: 2px solid ${(props) => props.theme.colors.blue100};
   }
 
+  &:focus + label,
+  &:not(:placeholder-shown) + label {
+    font-size: 0.75rem;
+    top: 7px;
+  }
+
+  &:focus + label {
+    color: ${(props) => props.theme.colors.blue100};
+  }
+
   &::placeholder {
+    opacity: 0;
     color: ${(props) => props.theme.colors.black50};
   }
 
-  & + button {
-    margin-top: 2rem;
-  }
+  ${(props) =>
+    props.isValid &&
+    css`
+      margin-bottom: 2rem;
+    `}
+`
+
+export const Label = styled.label`
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  pointer-events: none;
+  transition: opacity, top, 0.15s;
+  color: ${(props) => props.theme.colors.black50};
 `

@@ -2,9 +2,11 @@ import contactImg from '../../assets/contact.png'
 import {
   Container,
   Content,
+  CustomInputWrapper,
+  Error,
   Form,
   Input,
-  InputWrapper,
+  Label,
   Paragraph,
   SendMessageButton,
   Textarea,
@@ -58,6 +60,7 @@ export function Contact() {
     formState: { errors },
   } = useForm<TContactFormData>({
     resolver: zodResolver(contactFormValidationSchema),
+    mode: 'all',
   })
 
   function sendEmail(
@@ -104,29 +107,43 @@ export function Contact() {
             Preencha o formulário ao lado e entrarei em contato o mais rápido
             possível.
           </Paragraph>
-          <InputWrapper>
+          <CustomInputWrapper>
             <Input
               {...register('name', { required: true, maxLength: 50 })}
               placeholder="Nome"
+              isValid={errors.name === undefined}
             />
-            {errors.name && <span>{errors.name.message}</span>}
+            <Label htmlFor="name">Nome</Label>
+            {errors.name && <Error>{errors.name.message}</Error>}
+          </CustomInputWrapper>
+          <CustomInputWrapper>
             <Input
               {...register('email', { required: true })}
-              placeholder="Email"
+              placeholder="E-mail"
+              isValid={errors.email === undefined}
             />
-            {errors.email && <span>{errors.email.message}</span>}
+            <Label htmlFor="email">E-mail</Label>
+            {errors.email && <Error>{errors.email.message}</Error>}
+          </CustomInputWrapper>
+          <CustomInputWrapper>
             <Input
               {...register('subject', { required: true, maxLength: 50 })}
               placeholder="Assunto"
+              isValid={errors.subject === undefined}
             />
-            {errors.subject && <span>{errors.subject.message}</span>}
+            <Label htmlFor="subject">Assunto</Label>
+            {errors.subject && <Error>{errors.subject.message}</Error>}
+          </CustomInputWrapper>
+          <CustomInputWrapper>
             <Textarea
               {...register('message', { required: true, maxLength: 300 })}
               placeholder="Mensagem"
+              isValid={errors.message === undefined}
             />
-            {errors.message && <span>{errors.message.message}</span>}
-            <SendMessageButton type="submit">Enviar Mensagem</SendMessageButton>
-          </InputWrapper>
+            <Label htmlFor="message">Mensagem</Label>
+            {errors.message && <Error>{errors.message.message}</Error>}
+          </CustomInputWrapper>
+          <SendMessageButton type="submit">Enviar Mensagem</SendMessageButton>
         </Form>
       </Content>
     </Container>
