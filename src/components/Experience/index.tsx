@@ -49,7 +49,10 @@ export function Experience() {
             <strong>Lista de Tarefas</strong>
             <span>React e Typescript</span>
             <ActionsWrapper>
-              <RepositoryButton href="https://github.com/dantevicenzo/todo-list">
+              <RepositoryButton
+                href="https://github.com/dantevicenzo/todo-list"
+                target="_blank"
+              >
                 Repositório
               </RepositoryButton>
               <SeeDemoButton
@@ -75,7 +78,10 @@ export function Experience() {
               >
                 Repositório
               </RepositoryButton>
-              <SeeDemoButton href="https://coffee-delivery.pages.dev/">
+              <SeeDemoButton
+                href="https://coffee-delivery.pages.dev/"
+                target="_blank"
+              >
                 Ver demo
               </SeeDemoButton>
             </ActionsWrapper>
