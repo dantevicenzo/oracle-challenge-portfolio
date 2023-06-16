@@ -7,8 +7,8 @@ export function Hero() {
       <div>
         <Title>Olá, meu nome é Dante Vicenzo e construo páginas web</Title>
         <Paragraph>
-          Eu sou formado em Filosofia e atualmente estou participando no projeto
-          Oracle ONE na Alura.
+          Eu sou um desenvolvedor front-end apaixonado por tecnologia e estou em
+          uma jornada com o objetivo de me tornar um engenheiro de software.
         </Paragraph>
         <LinksList>
           <li>
