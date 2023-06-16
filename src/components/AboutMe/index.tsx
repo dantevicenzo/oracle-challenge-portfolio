@@ -15,20 +15,19 @@ export function AboutMe() {
           jornada com o objetivo final de me tornar um engenheiro de software.
         </Paragraph>
         <Paragraph>
-          Minha formação acadêmica inclui um diploma em Filosofia, o que me
-          permitiu desenvolver habilidades analíticas e uma mente questionadora.
-          Através da filosofia, aprendi a abordar problemas de forma crítica e a
-          buscar soluções inovadoras.
-        </Paragraph>
-
-        <Paragraph>
           Ao longo dos anos, desenvolvi habilidades valiosas como cineasta,
           incluindo a capacidade de trabalhar em equipe, gerenciar projetos
           complexos e comunicar histórias de maneira envolvente. Meu fundo
           cinematográfico me ensinou a ser criativo, adaptável e a abordar
           desafios com uma mentalidade aberta. Agora, estou aplicando essas
           habilidades para explorar o mundo da tecnologia e da programação, onde
-          a narrativa é moldada através de códigos e soluções inovadoras.
+          a narrativa é moldada através de códigos e resolução de problemas.
+        </Paragraph>
+        <Paragraph>
+          Minha formação acadêmica inclui um diploma em Filosofia, o que me
+          permitiu desenvolver habilidades analíticas e uma mente questionadora.
+          Através da filosofia, aprendi a abordar problemas de forma crítica e a
+          buscar soluções inovadoras.
         </Paragraph>
         <Paragraph>
           Combinando essa mentalidade com meu desejo de aprender e crescer na
