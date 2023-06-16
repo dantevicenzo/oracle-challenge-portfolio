@@ -103,6 +103,8 @@ const BaseButton = styled.a`
   cursor: pointer;
   text-decoration: none;
 
+  transition: background-color 0.15s;
+
   @media (max-width: 768px) {
     padding: 0.75rem;
     font-size: 0.875rem;

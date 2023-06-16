@@ -54,6 +54,8 @@ export const SendMessageButton = styled.button`
   border: none;
   color: ${(props) => props.theme.colors.white};
 
+  transition: background-color 0.15s;
+
   &:hover {
     background-color: ${(props) => props.theme.colors.blue80};
   }
