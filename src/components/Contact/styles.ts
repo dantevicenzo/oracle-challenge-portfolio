@@ -80,14 +80,17 @@ interface IInputProps {
 }
 
 export const Input = styled.input<IInputProps>`
-  padding: 1.75rem 0.75rem 0.5rem;
+  padding: 1.75rem 0.75rem 0.375rem;
   border-radius: 4px;
   border: none;
   font-size: 1rem;
   height: 53px;
   width: 100%;
 
-  border-bottom: 2px solid ${(props) => props.theme.colors.black30};
+  color: ${(props) => props.theme.colors.black100};
+  caret-color: ${(props) => props.theme.colors.blue100};
+
+  border-bottom: 1px solid ${(props) => props.theme.colors.black30};
 
   &:focus {
     outline: none;
@@ -97,7 +100,7 @@ export const Input = styled.input<IInputProps>`
   &:focus + label,
   &:not(:placeholder-shown) + label {
     font-size: 0.75rem;
-    top: 7px;
+    top: 8px;
   }
 
   &:focus + label {
@@ -125,12 +128,15 @@ export const Textarea = styled.textarea<IInputProps>`
 
   overflow: hidden;
 
-  padding: 1.75rem 0.75rem 0.5rem;
+  padding: 1.75rem 0.75rem 0.375rem;
   border-radius: 4px;
   border: none;
   font-size: 1rem;
 
-  border-bottom: 2px solid ${(props) => props.theme.colors.black30};
+  color: ${(props) => props.theme.colors.black100};
+  caret-color: ${(props) => props.theme.colors.blue100};
+
+  border-bottom: 1px solid ${(props) => props.theme.colors.black30};
 
   &:focus {
     outline: none;
