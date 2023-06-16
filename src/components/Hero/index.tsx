@@ -1,5 +1,6 @@
 import ArrowUpRight from '../../assets/icon-arrow-up-right.svg'
 import { Container, LinksList, Paragraph, RoundImage, Title } from './styles'
+import curriculumVitae from '../../assets/CV - Dante Vicenzo Pereira Vale dos Passos.pdf'
 
 export function Hero() {
   return (
@@ -39,7 +40,7 @@ export function Hero() {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href={curriculumVitae} target="_blank" rel="noreferrer">
               Currículo <img src={ArrowUpRight} alt="" />
             </a>
           </li>
