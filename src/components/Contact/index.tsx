@@ -104,7 +104,7 @@ export function Contact() {
           <Title>Contato</Title>
           <Paragraph>
             Quer entrar em contato comigo? <br />
-            Preencha o formulário ao lado e entrarei em contato o mais rápido
+            Preencha o formulário abaixo e entrarei em contato o mais rápido
             possível.
           </Paragraph>
           <CustomInputWrapper>
