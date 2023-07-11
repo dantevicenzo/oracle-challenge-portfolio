@@ -3,7 +3,7 @@ import experience2 from '../../assets/experience2.png'
 import experience3 from '../../assets/experience3.png'
 import experience4 from '../../assets/experience4.png'
 import experience5 from '../../assets/experience5.png'
-import experience6 from '../../assets/experience6S.png'
+import experience6 from '../../assets/experience6.png'
 import {
   ActionsWrapper,
   Container,
