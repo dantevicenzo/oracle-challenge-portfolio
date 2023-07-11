@@ -2,6 +2,8 @@ import experience1 from '../../assets/experience1.png'
 import experience2 from '../../assets/experience2.png'
 import experience3 from '../../assets/experience3.png'
 import experience4 from '../../assets/experience4.png'
+import experience5 from '../../assets/experience5.png'
+import experience6 from '../../assets/experience6S.png'
 import {
   ActionsWrapper,
   Container,
@@ -27,13 +29,13 @@ export function Experience() {
             <span>HTML, CSS e Javascript</span>
             <ActionsWrapper>
               <RepositoryButton
-                href="https://dantevicenzo.github.io/oracle-challenge-decodificador/"
+                href="https://github.com/dantevicenzo/oracle-challenge-decodificador"
                 target="_blank"
               >
                 Repositório
               </RepositoryButton>
               <SeeDemoButton
-                href="https://github.com/dantevicenzo/oracle-challenge-decodificador"
+                href="https://dantevicenzo.github.io/oracle-challenge-decodificador"
                 target="_blank"
               >
                 Ver demo
@@ -103,6 +105,52 @@ export function Experience() {
               </RepositoryButton>
               <SeeDemoButton
                 href="https://github-blog-prod.pages.dev/"
+                target="_blank"
+              >
+                Ver demo
+              </SeeDemoButton>
+            </ActionsWrapper>
+          </InfoWrapper>
+        </ListItem>
+        <ListItem>
+          <ImgWrapper>
+            <img src={experience5} alt="" />
+          </ImgWrapper>
+          <InfoWrapper>
+            <strong>Ignite Shop</strong>
+            <span>React, Typescript e Next.js</span>
+            <ActionsWrapper>
+              <RepositoryButton
+                href="https://github.com/dantevicenzo/ignite-shop"
+                target="_blank"
+              >
+                Repositório
+              </RepositoryButton>
+              <SeeDemoButton
+                href="https://ignite-shop-fawn.vercel.app/"
+                target="_blank"
+              >
+                Ver demo
+              </SeeDemoButton>
+            </ActionsWrapper>
+          </InfoWrapper>
+        </ListItem>
+        <ListItem>
+          <ImgWrapper>
+            <img src={experience6} alt="" />
+          </ImgWrapper>
+          <InfoWrapper>
+            <strong>Alura Geek</strong>
+            <span>React, Typescript e Next.js</span>
+            <ActionsWrapper>
+              <RepositoryButton
+                href="https://github.com/dantevicenzo/alura-geek"
+                target="_blank"
+              >
+                Repositório
+              </RepositoryButton>
+              <SeeDemoButton
+                href="https://alura-geek-taupe.vercel.app/"
                 target="_blank"
               >
                 Ver demo
