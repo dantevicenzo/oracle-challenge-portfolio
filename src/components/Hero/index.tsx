@@ -6,10 +6,10 @@ export function Hero() {
   return (
     <Container>
       <div>
-        <Title>Olá, meu nome é Dante Vicenzo e construo páginas web</Title>
+        <Title>Olá, meu nome é Dante Vicenzo e construo sistemas web</Title>
         <Paragraph>
-          Eu sou um desenvolvedor front-end apaixonado por tecnologia e estou em
-          uma jornada com o objetivo de me tornar um engenheiro de software.
+          Eu sou um desenvolvedor de software apaixonado por tecnologia e estou
+          em uma jornada com o objetivo de me tornar um engenheiro de software.
         </Paragraph>
         <LinksList>
           <li>

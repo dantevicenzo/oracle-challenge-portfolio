@@ -7,12 +7,12 @@ export function AboutMe() {
       <Content>
         <Title>Sobre Mim</Title>
         <Paragraph>
-          Olá! Meu nome é Dante Vicenzo e sou um desenvolvedor front-end
+          Olá! Meu nome é Dante Vicenzo e sou um desenvolvedor de software
           apaixonado por tecnologia. Ao longo dos anos, tive o privilégio de
           trabalhar como cineasta, cinematógrafo e até mesmo como piloto de
           drone, contando histórias e capturando imagens deslumbrantes de
           diferentes perspectivas. Atualmente, estou embarcando em uma nova
-          jornada com o objetivo final de me tornar um engenheiro de software.
+          jornada com o objetivo de me tornar um engenheiro de software.
         </Paragraph>
         <Paragraph>
           Desenvolvi habilidades valiosas como cineasta, incluindo a capacidade
@@ -32,17 +32,13 @@ export function AboutMe() {
         <Paragraph>
           Combinando essa mentalidade com meu desejo de aprender e crescer na
           área da tecnologia, estou comprometido em aprimorar minhas habilidades
-          de desenvolvimento web, adquirindo conhecimento em linguagens de
-          programação como HTML, CSS e JavaScript, além de frameworks populares
-          como React e Node.js.
-        </Paragraph>
-        <Paragraph>
+          de desenvolvimento de software, adquirindo conhecimento em linguagens
+          de programação, além de frameworks populares como React e Node.js.
           Atualmente, estou buscando oportunidades que me permitam expandir meu
-          conjunto de habilidades e ganhar experiência prática em
-          desenvolvimento web. Se você está procurando um profissional
-          apaixonado, com uma perspectiva multidisciplinar e disposto a
-          enfrentar novos desafios, estou ansioso para explorar oportunidades
-          colaborativas e contribuir para projetos inovadores.
+          conjunto de habilidades e ganhar experiência prática. Se você está
+          procurando um profissional apaixonado, com uma perspectiva
+          multidisciplinar e disposto a enfrentar novos desafios, estou ansioso
+          para colaborar e contribuir em projetos.
         </Paragraph>
         <SignatureImg src={signature} alt="" />
       </Content>
