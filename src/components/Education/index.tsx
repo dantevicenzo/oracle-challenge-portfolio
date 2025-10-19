@@ -28,7 +28,7 @@ export function Education() {
               <img src={education3} alt="" />
             </ImgContainer>
             <strong>Formação em Front-End</strong>
-            <span>Em andamento - Alura</span>
+            <span>2023 - Alura</span>
           </li>
         </List>
       </Content>
