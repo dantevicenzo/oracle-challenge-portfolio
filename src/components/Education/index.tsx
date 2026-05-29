@@ -27,8 +27,8 @@ export function Education() {
             <ImgContainer>
               <img src={education3} alt="" />
             </ImgContainer>
-            <strong>Formação em Front-End</strong>
-            <span>2023 - Alura</span>
+            <strong>Bacharelado em Engenharia de Software</strong>
+            <span>2026 a 2030 - UCSal</span>
           </li>
         </List>
       </Content>
