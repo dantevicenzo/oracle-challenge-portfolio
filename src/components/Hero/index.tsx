@@ -1,6 +1,6 @@
 import ArrowUpRight from '../../assets/icon-arrow-up-right.svg'
 import { Container, LinksList, Paragraph, RoundImage, Title } from './styles'
-import curriculumVitae from '../../assets/CV - Dante Vicenzo Pereira Vale dos Passos.pdf'
+import curriculumVitae from '../../assets/Dante Vicenzo Pereira Vale dos Passos - Currículo.pdf'
 
 export function Hero() {
   return (
